@@ -21,7 +21,7 @@ nav {
     margin: 10px 0;
 }
 
-nav button {
+button {
     font-family:'Courier New', Courier, monospace;
     color:lemonchiffon;
     background-color:indigo;
@@ -32,20 +32,19 @@ nav button {
 }
 
 button.contact {
-    font-family:'Courier New', Courier, monospace;
-    color:lemonchiffon;
-    background-color:indigo;
-    border-style: none;
-    border-radius: 10px;
-    padding: 10px;
-    transition-duration: 0.4s;
+    color:midnightblue;
+    background-color:aquamarine;
 }
 
-.button:hover {
-    background-color:darkmagenta;
+button:hover {
+    background-color:deeppink;
 }
 
-main {
+.contact:hover {
+    background-color:darkcyan;
+}
+
+.welcome {
     display: flex;
 }
 
@@ -87,6 +86,10 @@ footer {
     flex-wrap: nowrap;
     align-items:flex-start;
     gap: 20px;
+}
+
+.contgel button {
+ margin-bottom: 10px;
 }
 
 .contart {
