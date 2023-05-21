@@ -3,7 +3,7 @@ body {
     margin: 20px;
 }
 
-.align {
+header {
     display: flex;
     align-items: center;
   }
@@ -17,11 +17,11 @@ body {
     margin-left: 20px;
 }
 
-.nav {
+nav {
     margin: 10px 0;
 }
 
-button.nav {
+nav button {
     font-family:'Courier New', Courier, monospace;
     color:lemonchiffon;
     background-color:indigo;
@@ -45,28 +45,30 @@ button.contact {
     background-color:darkmagenta;
 }
 
+main {
+    display: flex;
+}
+
 .about {
-    float: left;
     width: 40%;
 }
 
 .me {
-    float: left;
     width: 60%;
-    max-height: 40%;
     max-width:100%;
 }
 
 @media screen and (max-width: 800px) {
-    .about, .me {
-      width: 60%;
+    main {
+        flex-direction: column;
+    }
+
+    .about,.me {
+        width: 100%;
     }
 }
 
-.footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
+footer {
     width: 100%;
     padding: 20px;
  }
