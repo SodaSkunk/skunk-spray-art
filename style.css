@@ -58,7 +58,7 @@ button:hover {
 }
 
 @media screen and (max-width: 800px) {
-    main {
+    .welcome {
         flex-direction: column;
     }
 
