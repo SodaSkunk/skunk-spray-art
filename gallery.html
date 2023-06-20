@@ -37,11 +37,23 @@
     <div class="contgel">
         <div>
             
-            <button class="nav button">ILLUSTRATION</button>
+            <button class="nav button" 
+            onclick="document.getElementById('illu').style.display='block' 
+            document.getElementById('cost').style.display='none'
+            document.getElementById('merch').style.display='none'">
+            ILLUSTRATION</button>
             
-            <button class="nav button">COSTUMES</button>
+            <button class="nav button" 
+            onclick="document.getElementById('cost').style.display='block'
+            document.getElementById('merch').style.display='none'
+            document.getElementById('illu').style.display='none'">
+            >COSTUMES</button>
             
-            <button class="nav button">MERCHANDISE</button>
+            <button class="nav button" 
+            onclick="document.getElementById('merch').style.display='block'
+            document.getElementById('cost').style.display='none'
+            document.getElementById('illu').style.display='none'">
+            MERCHANDISE</button>
 
             <a href="https://www.instagram.com/skunksprayart/" target="_blank">
                 <button class="nav contact">WIP - INSTAGRAM</button>
@@ -52,7 +64,7 @@
 
         <!-- costumes -->
 
-        <div class="container">
+        <div class="container" id="cost">
 
             <div class="contart">
                 <img src="art/fish.jpg" class="art">
@@ -60,10 +72,6 @@
                     <div class=" middle text">Angler fish mask and claws for the 2022 Flüüfff haunt</div>
                 </div>
             </div>
-
-        </div>
-
-        <div class="container">
 
             <div class="contart">
                 <img src="art/gods.jpg" class="art">
@@ -76,7 +84,7 @@
 
         <!-- merchandise -->
 
-        <div class="container">
+        <div class="container" id="merch">
 
             <div class="contart">
                 <img src="art/jack.jpg" class="art">
@@ -96,7 +104,7 @@
 
         <!-- illustration -->
 
-        <div class="container">
+        <div class="container" id="illu">
 
             <div class="contart">
                 <img src="art/affishe.jpg" class="art">
