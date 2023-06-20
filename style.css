@@ -17,8 +17,14 @@ header {
     margin-left: 20px;
 }
 
-nav {
+#navbar {
+    overflow: hidden;
     margin: 10px 0;
+}
+
+#navbar a {
+    float: left;
+    display: block;
 }
 
 button {
