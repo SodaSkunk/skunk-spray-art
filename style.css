@@ -7,6 +7,10 @@ body {
     margin-bottom: 20px;
 }
 
+.marbot10{
+    margin-bottom: 10px;
+}
+
 .marmain {
     margin: 30px 10px;
 }
@@ -100,14 +104,14 @@ footer {
 }
 
 .contgel {
-    display:flex;
+    display: flex;
     flex-wrap: nowrap;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 20px;
 }
 
 .contgel button {
- margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .contart {
@@ -115,12 +119,11 @@ footer {
 }
 
 .art {
-    display: block;
     max-height: 500px;
     max-width: 100%;
 }
 
-.overlay {
+/* .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -150,9 +153,9 @@ footer {
 
 .contart:hover .middle {
     opacity: 1;
-}
+} 
   
 .text {
     color: lemonchiffon;
     font-size: large;
-}
+} */
