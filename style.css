@@ -188,6 +188,11 @@ footer {
     gap: 10px;
 }
 
+#cost {
+    display: none;
+}
+
+
 .prod {
     height: 300px;
     cursor: pointer;
