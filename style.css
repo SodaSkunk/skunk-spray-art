@@ -1,6 +1,10 @@
+
+/* general-------------------------------------- */
+
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 20px;
+    background-color:snow;
 }
 
 .marbot20{
@@ -11,11 +15,11 @@ body {
     margin-bottom: 10px;
 }
 
-.marmain {
-    margin: 30px 10px;
+main {
+    margin: 40px 50px;
 }
 
-/* header */
+/* header -------------------------------------- */
 
 header {
     display: flex;
@@ -31,7 +35,7 @@ nav {
     margin: 20px;
 }
 
-/* buttons */
+/* buttons -------------------------------------- */
 
 button {
     font-family:'Courier New', Courier, monospace;
@@ -56,7 +60,12 @@ button:hover {
     background-color:darkcyan;
 }
 
-/* home */
+
+footer {
+    margin-bottom: 40px;
+ }
+
+/* home -------------------------------------- */
 
 .welcome {
     display: flex;
@@ -90,40 +99,53 @@ button:hover {
     }
 }
 
-footer {
-    margin-bottom: 40px;
- }
+/* gallery -------------------------------------- */
 
-/* gallery */
-
-.container {
-    display:flex;
+.gallery {
+    display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
     gap: 10px;
 }
 
-.contgel {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    gap: 20px;
+#cost {
+    display: none;
 }
 
-.contgel button {
-    margin-bottom: 10px;
-}
-
-.contart {
+.prod {
+    height: 300px;
+    cursor: pointer;
     position: relative;
 }
 
-.art {
-    max-height: 500px;
-    max-width: 100%;
+.prod img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
 }
 
-/* .overlay {
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(75, 0, 130, 0.65);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: lightgoldenrodyellow;
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+/* hover */
+.prod:hover .overlay {
+    transform: scale(1);
+}
+
+/*.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -159,9 +181,32 @@ footer {
     color: lemonchiffon;
     font-size: large;
 } */
+/*.container {
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+}
 
-/* ---------------------------------------------------------------*/
+.contgel {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 20px;
+}
 
+.contgel button {
+    margin-bottom: 10px;
+}
+
+.contart {
+    position: relative;
+}
+
+.art {
+    max-height: 500px;
+    max-width: 100%;
+}*/
 /*.gallery {
     display: flex;
     flex-wrap: wrap;
@@ -181,48 +226,3 @@ footer {
     vertical-align: middle;
     border-radius: 5px;
 } */
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-#cost {
-    display: none;
-}
-
-
-.prod {
-    height: 300px;
-    cursor: pointer;
-    position: relative;
-}
-
-.prod img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(75, 0, 130, 0.65);
-    top: 0;
-    left: 0;
-    transform: scale(0);
-    transition: all 0.2s 0.1s ease-in-out;
-    color: lightgoldenrodyellow;
-    /* center overlay text */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-/* hover */
-.prod:hover .overlay {
-    transform: scale(1);
-}
